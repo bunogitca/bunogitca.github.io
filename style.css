@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: black;
+    color: yellow;
+}
+/* Cabeçalho */
+header {
+    background: darkgreen;
+    color: yellow;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:yellow;
+    cursor: pointer;
+}
+
+/*Seções*/
+section {
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container2{
+    max-width: 300px;
+    margin: 0 auto;
+}
+h2{
+    margin-bottom: 16px;
+}
+
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.foto-perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+.cards{
+    display: flex;
+    gap: 16px;
+}
+.card{
+    background: darkgreen;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hobby{
+    display: flex;
+    align-items: center;
+    background: darkgreen;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+.hobby:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+.hobby i{
+    font-size: 32px;
+    color: yellow;
+}
+.contatos, .minhas-redes{
+    display: flex;
+    align-items: center;
+    background: darkgreen;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    margin: 15px auto;
+    justify-content: center;
+    width: 130px auto;
+}
+form{
+    display: grid;
+    gap: 16px;
+}
+input, textarea{
+    width: 100%;
+    background: darkgreen;
+    opacity: 50%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button{
+    background: darkgreen;
+    color: yellow;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    transform: 3s ease-in;
+}
+button:hover{
+    background: yellow;
+    color: darkgreen;
+}
+footer{
+    background: darkgreen;
+    color: yellow;
+    text-align: center;
+    padding: 16px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
